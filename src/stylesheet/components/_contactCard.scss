@@ -1,0 +1,48 @@
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.6rem;
+  background-color: $contact-card-even;
+
+  &:nth-child(odd) {
+    background-color: $contact-card-odd;
+  }
+
+  .avatar-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .avatar {
+      background: url("https://www.instituteofphotography.in/wp-content/uploads/2015/05/dummy-profile-pic.jpg");
+      background-size: contain;
+      width: 70px;
+      height: 70px;
+      clip-path: polygon(50% 0, 90% 25%, 90% 75%, 50% 100%, 10% 75%, 10% 25%);
+    }
+  }
+  .userinfo {
+    margin-left: 0.5rem;
+    .username {
+      font-size: $title-fs;
+      font-weight: 400;
+      color: $contact-font-color;
+      max-width: 120px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .user_phone_type {
+      font-size: $subtitle-fs;
+      font-weight: 300;
+      color: $contact-font-color;
+      text-transform: capitalize;
+      max-width: 150px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

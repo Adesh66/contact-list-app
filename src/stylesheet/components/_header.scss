@@ -1,0 +1,25 @@
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding:1rem  .6rem;
+  background: #71354d;
+
+  &.fixed{
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    background-color: rgba(100, 51, 69, .8);
+  }
+  .title-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-title {
+    font-size: 20px;
+    margin-left: 0.8rem;
+    font-weight: 300;
+    color: #cacaca;
+  }
+}
+

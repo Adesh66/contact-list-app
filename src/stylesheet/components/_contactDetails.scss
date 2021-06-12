@@ -1,0 +1,14 @@
+.big-avatar{
+    width: 100%;
+    height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+
+.contact-details{
+    .userinfo .username{
+        max-width: 250px;
+    }
+}

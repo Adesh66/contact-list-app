@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "./stylesheet/main.scss";
+import ContactCard from "./components/shared/ContactCard";
+import ContactDetails from "./components/shared/ContactDetails";
+import { Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main-area">
+      <Switch>
+        <Route exact path="/">
+          <ContactCard />
+        </Route>
+        <Route path="/contacts">
+          <ContactCard />
+        </Route>
+        <Route path="/contact-details/:id">
+          <ContactDetails />
+        </Route>
+      </Switch>
+    </main>
   );
 }
 
